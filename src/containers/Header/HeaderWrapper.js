@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const colors = {
-    dark: "rgb(23, 16, 65)",
+    dark: "#002F34",
     light: "rgb(236, 234, 255)"
 }
 
@@ -17,6 +17,9 @@ const HeaderWrapper = styled.header`
     &.dark{
         background-color: ${colors.dark};
         a{
+            color: ${colors.light} !important;
+        }
+        h1{
             color: ${colors.light} !important;
         }
     }

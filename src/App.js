@@ -1,11 +1,12 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import MobileApps from './pages/About';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import Page404 from './containers/Page404';
 import ThemeContext from "./theme-context";
 import { useState } from 'react';
+import HeaderWrapper from './containers/Header/HeaderWrapper';
 
 let pages = [
   { path: "/", component: <Home />, exact: true },
@@ -34,6 +35,7 @@ function App() {
         </Switch>
       </div>
     </ThemeContext.Provider>
+
   );
 }
 

@@ -2,14 +2,14 @@ import "./About.css"
 import React from 'react'
 import Container from "../../containers/Container";
 
-const About = () => {
+const MobileApps = () => {
     return (
         <Container>
-            <div className="container">
+            <div className="container top">
                 <h1>Мобильные приложения</h1>
             </div>
         </Container>
     )
 }
 
-export default About;
+export default MobileApps;

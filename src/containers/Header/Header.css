@@ -1,0 +1,39 @@
+.img {
+    width: 71px;
+    height: 41px;
+}
+.pod {
+    background-color: #fff;
+    color: #111;
+    border: 6px solid #fff !important;
+    transition: 0.3s;
+}
+.pod:hover {
+    background-color: #002F34;
+}
+
+.back-c {
+    position: fixed;
+    /* width: 100%; */
+    top: 0;
+    background-color: #002F34;
+}
+
+span {
+    color: #748E90;
+    padding-left: 16px;
+}
+p{
+    font-size: 14px;
+}
+.effect-p {
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.bor-rad {
+    width: 80px;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 19%;
+}

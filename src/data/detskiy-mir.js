@@ -11,10 +11,10 @@ const data = [
         price: "24.99 у.е.",
         location: "Ташкент, Чиланзарский район",
     }, {
-        img: "",
-        title: "",
-        price: "",
-        location: "",
+        img: "https://apollo-olx.cdnvideo.ru/v1/files/y25us078y89n1-UZ/image;s=644x461",
+        title: "Игрушка горка Hello kitty",
+        price: "150 000 сум",
+        location: "Ташкент, Яккасарайский район",
     },
 ]
 

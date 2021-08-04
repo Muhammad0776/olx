@@ -8,25 +8,29 @@ console.log(datas);
 
 const Category = () => {
     const { category } = useParams();
-    console.log(category);
+    // console.log(category);
 
     const obj = datas.filter(v => v.category == category)[0];
     const data = obj.data;
-    console.log(obj);
-    console.log(data);
+    // console.log(obj);
+    // console.log(data);
 
     return (
         <Container>
-            <div className="container">
+            <div className="container top">
                 <h1>Category: {category}</h1>
                 <div className="row">
                     {data.map(v =>
-                        <div className="col-sm-6 col-md-3">
-                            <div className="product shadow rounded overflow-hidden p-2">
-                                <img src={v.img} className="w-100 mb-4" alt="" />
-                                <p>{v.title}</p>
-                                <span>{v.price}</span> <br />
-                                <span>{v.location}</span>
+                        <div>
+                            <div className="product shadow rounded overflow-hidden p-2 mb-3 d-flex">
+                                <img src={v.img} className="w-25 mb-4" alt="" />
+                                <div className="ms-2">
+                                    <div className="d-flex justify-content-between">
+                                        <p>{v.title}</p>
+                                        <span>{v.price}</span> <br />
+                                    </div>
+                                    <span>{v.location}</span>
+                                </div>
                             </div>
                         </div>)
                     }

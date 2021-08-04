@@ -18,3 +18,12 @@
     width: 80%;
     height: auto;
   }
+
+  .top {
+    padding-top: 140px !important;
+  }
+
+  .bg-color:hover {
+    background-color: #002F34;
+    color: #fff;
+  }
