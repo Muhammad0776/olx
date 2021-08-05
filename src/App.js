@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import MobileApps from './pages/About';
 import Home from './pages/Home';
 import Category from './pages/Category';
@@ -10,10 +10,11 @@ import HeaderWrapper from './containers/Header/HeaderWrapper';
 
 let pages = [
   { path: "/", component: <Home />, exact: true },
+  { path: "/Page404", component: <Page404 /> },
   { path: "/mobileapps", component: <MobileApps /> },
   { path: "/:category", exact: true, component: <Category /> },
   // { path: "/:category/:subcategory", component: <Category /> },
-  { component: <Page404 /> }
+  { component: <Redirect to="/" /> }
 ]
 
 function App() {
