@@ -16,7 +16,7 @@ const categories = [
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/nedvizhimost-1-2x.png",
         backColor: "#3A77FF",
         title: "Недвижимость",
-        to: "Недвижимость"
+        to: "real-state"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/transport-3-2x.png",
@@ -28,55 +28,55 @@ const categories = [
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/rabota-6-2x.png",
         backColor: "#ff5636",
         title: "Работа",
-        to: "Работа"
+        to: "work"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/zhivotnye-35-2x.png",
         backColor: "#fff6d9",
         title: "Животные",
-        to: "Животные"
+        to: "animals"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/dom-i-sad-899-2x.png",
         backColor: "#ceddff",
         title: "Дом и сад",
-        to: "Дом"
+        to: "home-trees"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/elektronika-37-2x.png",
         backColor: "#c8f8f6",
         title: "Электроника",
-        to: "Электроника"
+        to: "electronik"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/uslugi-7-2x.png",
         backColor: "#ffd6c9",
         title: "Бизнес и услуги",
-        to: "Бизнес"
+        to: "business"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/moda-i-stil-891-2x.png",
         backColor: "#ffce32",
         title: "Мода и стиль",
-        to: "Мода"
+        to: "moda"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/hobbi-otdyh-i-sport-903-2x.png",
         backColor: "#ceddff",
         title: "Хобби",
-        to: "Хобби"
+        to: "hobby"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/otdam-darom-1151-2x.png",
         backColor: "#c8f8f6",
         title: "Отдам даром",
-        to: "Отдам"
+        to: "give"
     },
     {
         icon: "https://categories.olxcdn.com/assets/categories/olxuz/obmen-barter-1153-2x.png",
         backColor: "#ffd6c9",
         title: "Обмен",
-        to: "Обмен"
+        to: "exchange"
     },
 ]
 
