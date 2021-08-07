@@ -1,8 +1,7 @@
 import "./Home.css"
-import React, { useContext } from 'react'
+import React from 'react'
 import Container from "../../containers/Container";
 import { Link } from "react-router-dom";
-import ThemeContext from "./../../theme-context"
 import HeaderWrapper from "../../containers/Header/HeaderWrapper";
 
 const categories = [
@@ -82,11 +81,9 @@ const categories = [
 
 const Home = () => {
 
-    const { theme } = useContext(ThemeContext)
-    console.log(theme);
 
     return (
-        <HeaderWrapper className={theme}>
+        <HeaderWrapper>
             <Container>
                 <div className="container py-4 top">
                     <h1 className="text-center">Главные категории</h1>

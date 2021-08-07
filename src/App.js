@@ -1,16 +1,18 @@
 import './App.css';
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import MobileApps from './pages/About';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import Page404 from './containers/Page404';
-import ThemeContext from "./theme-context";
-import { useState } from 'react';
-import HeaderWrapper from './containers/Header/HeaderWrapper';
 
+//REDUX
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
+//ROUTES
 let pages = [
   { path: "/", component: <Home />, exact: true },
-  { path: "/Page404", component: <Page404 /> },
+  { path: "/page404", component: <Page404 /> },
   { path: "/mobileapps", component: <MobileApps /> },
   { path: "/:category", exact: true, component: <Category /> },
   // { path: "/:category/:subcategory", component: <Category /> },
@@ -18,14 +20,8 @@ let pages = [
 ]
 
 function App() {
-  const [theme, setTheme] = useState("dark");
-
-  const toggleTheme = () => {
-    setTheme(theme == "dark" ? "light" : "dark")
-  }
-
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <Provider store={store}>
       <div className="App">
         <Switch>
           {pages.map((page, index) => {
@@ -35,7 +31,7 @@ function App() {
           })}
         </Switch>
       </div>
-    </ThemeContext.Provider>
+    </Provider>
 
   );
 }

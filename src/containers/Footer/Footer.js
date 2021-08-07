@@ -1,7 +1,6 @@
 import "./Footer.css"
 import React from 'react'
 import { Link } from "react-router-dom"
-import ThemeContext from "../../theme-context"
 
 let list01 = [
     { to: "/mobileapps", title: "Мобильные приложения" },
@@ -24,7 +23,7 @@ let list02 = [
 
 const Footer = () => {
     return (
-        <footer className={`bg - light text-dark border-top ${ThemeContext}`}>
+        <footer className="bg - light text-dark border-top">
             <div className="container py-5">
                 <div class="row">
                     <div className="col-md-4"><div>
